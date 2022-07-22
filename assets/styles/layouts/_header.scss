@@ -1,0 +1,21 @@
+header {
+    background: url(/assets/img/bg-slider-06.jpg);
+    height: 100vh;
+    nav {
+        display: flex;
+        justify-content: space-around;
+        div {
+            font-family: allura, sans-serif;
+            color: white;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        ul {
+            display: flex;
+        }
+        li,
+        a {
+            color: white;
+        }
+    }
+}
