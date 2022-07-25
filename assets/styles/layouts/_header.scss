@@ -1,9 +1,13 @@
 header {
-    background: url(/assets/img/bg-slider-06.jpg);
+    background: url(/assets/img/bg-slider-06.jpg) center/cover;
     height: 100vh;
     nav {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        align-items: center;
+        width: 75%;
+        margin: 0 auto;
+        padding-top: 20px;
         div {
             font-family: allura, sans-serif;
             color: white;
@@ -12,10 +16,53 @@ header {
         }
         ul {
             display: flex;
+            justify-content: space-around;
+            font-family: $font3;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+        .nav {
+            width: 73%;
+        }
+        .nav-social {
+            width: 8%;
         }
         li,
         a {
-            color: white;
+            justify-content: space-around;
+            color: $color1;
+        }
+    }
+    .title {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 660px;
+        span {
+            font-size: 4rem;
+            font-family: $font1;
+            color: $color3;
+        }
+        h1 {
+            color: $color1;
+            font-family: $font2;
+            font-size: 4rem;
+            letter-spacing: 14px;
+            text-transform: uppercase;
+            transform: translateY(-40px);
+        }
+        .img-ico {
+            height: 35px;
+            width: 35px;
+            background: $img1;
+        }
+        p {
+            color: $color1;
+            font-family: $font3;
+            text-transform: uppercase;
+            letter-spacing: 8px;
+            transform: translateY(50px);
         }
     }
 }

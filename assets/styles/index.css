@@ -9,7 +9,7 @@
 }
 
 @font-face {
-  font-family: "Roboto";
+  font-family: "roboto";
   src: url(../fonts/Roboto-Light.ttf);
 }
 
@@ -24,7 +24,7 @@
 }
 
 header {
-  background: url(/assets/img/bg-slider-06.jpg);
+  background: url(/assets/img/bg-slider-06.jpg) center/cover;
   height: 100vh;
 }
 
@@ -32,8 +32,15 @@ header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 20px;
 }
 
 header nav div {
@@ -47,10 +54,506 @@ header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-family: "roboto";
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+header nav .nav {
+  width: 73%;
+}
+
+header nav .nav-social {
+  width: 8%;
 }
 
 header nav li,
 header nav a {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   color: white;
+}
+
+header .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 660px;
+}
+
+header .title span {
+  font-size: 4rem;
+  font-family: "allura";
+  color: #a67245;
+}
+
+header .title h1 {
+  color: white;
+  font-family: "poppins";
+  font-size: 4rem;
+  letter-spacing: 14px;
+  text-transform: uppercase;
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+}
+
+header .title .img-ico {
+  height: 35px;
+  width: 35px;
+  background: url("../img/ic-plate-big.png") center/cover;
+}
+
+header .title p {
+  color: white;
+  font-family: "roboto";
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+}
+
+.section1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  background: #eeeeee;
+}
+
+.section1 .content-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px dashed #a67245;
+  margin: 15px;
+  padding: 30px 25px;
+}
+
+.section1 .content-left span {
+  font-size: 2.5rem;
+  font-family: "allura";
+  color: #a67245;
+}
+
+.section1 .content-left h2 {
+  font-family: "poppins";
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+
+.section1 .content-left .img-ico2 {
+  height: 35px;
+  width: 35px;
+  background: url("../img/ic-plate.png") center/cover;
+  margin: 20px 0 40px;
+}
+
+.section1 .content-left p {
+  font-size: 1.3rem;
+  font-family: "roboto";
+  text-align: center;
+}
+
+.section1 .content-left .avatar01 {
+  height: 90px;
+  width: 90px;
+  border-radius: 100px;
+  background: url(/assets/img/avatar-01.jpg) center/cover;
+  margin: 25px 0 20px;
+}
+
+.section1 dl {
+  text-align: center;
+}
+
+.section1 dl dt {
+  font-size: 1.3rem;
+  font-family: "poppins";
+}
+
+.section1 dl dd {
+  font-family: "roboto";
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.section1 .content-right {
+  background: url("/assets/img/store-01.jpg") center/cover;
+}
+
+.section2 {
+  background: #21201e;
+}
+
+.section2 .content-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section2 .content-top span {
+  margin: 70px 0 20px;
+  font-size: 2.5rem;
+  font-family: "allura";
+  color: #a67245;
+}
+
+.section2 .content-top .img-ico2 {
+  height: 35px;
+  width: 35px;
+  background: url("../img/ic-plate.png") center/cover;
+  margin: 20px 0 40px;
+}
+
+.section2 .content-top ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: white;
+  font-family: "roboto";
+  font-size: 1.2rem;
+  width: 50%;
+}
+
+.section2 .content-top ul li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+  padding-bottom: 10px;
+}
+
+.section2 .bgmenu {
+  position: absolute;
+  background: url("/assets/img/bg-menu-01.jpg") center/cover;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateY(200px);
+          transform: translateY(200px);
+}
+
+.section2 .menu {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: #eeeeee;
+  width: 52%;
+  margin: 30px auto;
+  border-top: 5px solid #a67245;
+}
+
+.section2 .menu dt {
+  font-family: "poppins";
+  text-transform: uppercase;
+}
+
+.section2 .menu dd {
+  font-family: "roboto";
+  font-size: 1.3rem;
+}
+
+.section2 .menu p {
+  font-size: 1.5rem;
+  font-family: "roboto";
+  font-weight: bold;
+  color: #a67245;
+}
+
+.section2 .menu .menu-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding-bottom: 15px;
+}
+
+.section2 .menu .menu-left .menu-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  margin: 5px auto;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+  padding-bottom: 20px;
+}
+
+.section2 .menu .menu-left .item1 {
+  height: 120px;
+  width: 120px;
+  border-radius: 100px;
+  margin: 25px 0 20px;
+  background: url("/assets/img/dish-item-01.jpg") center/cover;
+}
+
+.section2 .menu .menu-left .item3 {
+  height: 120px;
+  width: 120px;
+  border-radius: 100px;
+  margin: 25px 0 20px;
+  background: url("/assets/img/dish-item-03.jpg") center/cover;
+}
+
+.section2 .menu .menu-left .item5 {
+  height: 120px;
+  width: 120px;
+  border-radius: 100px;
+  margin: 25px 0 20px;
+  background: url("/assets/img/dish-item-05.jpg") center/cover;
+}
+
+.section2 .menu .menu-left .item7 {
+  height: 120px;
+  width: 120px;
+  border-radius: 100px;
+  margin: 25px 0 20px;
+  background: url("/assets/img/dish-item-07.jpg") center/cover;
+}
+
+.section2 .menu .menu-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.section2 .menu .menu-right .menu-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  margin: 5px auto;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+  padding-bottom: 20px;
+}
+
+.section2 .menu .menu-right .item2 {
+  height: 120px;
+  width: 120px;
+  border-radius: 100px;
+  margin: 25px 0 20px;
+  background: url("/assets/img/dish-item-02.jpg") center/cover;
+}
+
+.section2 .menu .menu-right .item4 {
+  height: 120px;
+  width: 120px;
+  border-radius: 100px;
+  margin: 25px 0 20px;
+  background: url("/assets/img/dish-item-04.jpg") center/cover;
+}
+
+.section2 .menu .menu-right .item6 {
+  height: 120px;
+  width: 120px;
+  border-radius: 100px;
+  margin: 25px 0 20px;
+  background: url("/assets/img/dish-item-06.jpg") center/cover;
+}
+
+.section2 .menu .menu-right .item8 {
+  height: 120px;
+  width: 120px;
+  border-radius: 100px;
+  margin: 25px 0 20px;
+  background: url("/assets/img/dish-item-08.jpg") center/cover;
+}
+
+.section3 {
+  padding-top: 300px;
+  background: #21201e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.section3 .content {
+  margin-top: 80px;
+  background: black;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 70%;
+      grid-template-columns: 30% 70%;
+  width: 70%;
+}
+
+.section3 .content-left {
+  color: white;
+  margin: 30px;
+  border: 1px dashed #eeeeee;
+}
+
+.section3 .content-left span {
+  font-family: "allura";
+  font-size: 3rem;
+  color: #a67245;
+  line-height: 100px;
+}
+
+.section3 .content-left h2 {
+  text-transform: uppercase;
+  font-family: "poppins";
+  font-size: 1.8rem;
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+}
+
+.section3 .content-left .img-ico2 {
+  height: 35px;
+  width: 35px;
+  background: url("../img/ic-plate.png") center/cover;
+  margin: 20px 0 40px;
+  margin: 0 auto 50px;
+}
+
+.section3 .content-left h3 {
+  text-transform: uppercase;
+  color: #a67245;
+  font-family: "poppins";
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.section3 .content-left p {
+  font-family: "roboto";
+  font-size: 1.1rem;
+  margin: 20px 0 50px;
+}
+
+.section3 .content-left h3:last-child {
+  margin-bottom: 50px;
+}
+
+.section3 .content-right {
+  background: #eeeeee;
+}
+
+.section3 .content-right span {
+  font-family: "allura";
+  font-size: 3rem;
+  color: #a67245;
+  line-height: 250px;
+}
+
+.section3 .content-right .img-ico2 {
+  height: 35px;
+  width: 35px;
+  background: url("../img/ic-plate.png") center/cover;
+  margin: 20px 0 40px;
+  margin: 0 auto 50px;
+  -webkit-transform: translateY(-80px);
+          transform: translateY(-80px);
+}
+
+.section3 .content-right h2 {
+  text-transform: uppercase;
+  font-family: "poppins";
+  font-size: 2.2rem;
+  -webkit-transform: translateY(-115px);
+          transform: translateY(-115px);
+}
+
+.section3 form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.section3 select,
+.section3 input {
+  font-size: 1rem;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.244);
+  padding: 30px 0px;
+  margin: 0 15px;
+  -webkit-transform: translateY(-90px);
+          transform: translateY(-90px);
+}
+
+.section3 .btn {
+  color: white;
+  text-transform: uppercase;
+  font-family: "poppins";
+  font-size: 1rem;
+  background-color: #1e1e1e;
+  margin-top: 50px;
+  padding: 15px 40px;
+  border-radius: 30px;
+  letter-spacing: 5px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.section3 .btn:hover {
+  color: #1e1e1e;
+  background: rgba(0, 0, 0, 0.2);
 }
 /*# sourceMappingURL=index.css.map */
