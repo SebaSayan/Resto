@@ -182,7 +182,7 @@ header .title p {
   height: 90px;
   width: 90px;
   border-radius: 100px;
-  background: url(/assets/img/avatar-01.jpg) center/cover;
+  background: url("/assets/img/avatar-01.jpg") center/cover;
   margin: 25px 0 20px;
 }
 
@@ -272,6 +272,7 @@ header .title p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-width: 970px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   background: #eeeeee;
@@ -328,7 +329,7 @@ header .title p {
 .section2 .menu .menu-left .item1 {
   height: 120px;
   width: 120px;
-  border-radius: 100px;
+  border-radius: 150px;
   margin: 25px 0 20px;
   background: url("/assets/img/dish-item-01.jpg") center/cover;
 }
@@ -336,7 +337,7 @@ header .title p {
 .section2 .menu .menu-left .item3 {
   height: 120px;
   width: 120px;
-  border-radius: 100px;
+  border-radius: 150px;
   margin: 25px 0 20px;
   background: url("/assets/img/dish-item-03.jpg") center/cover;
 }
@@ -344,7 +345,7 @@ header .title p {
 .section2 .menu .menu-left .item5 {
   height: 120px;
   width: 120px;
-  border-radius: 100px;
+  border-radius: 150px;
   margin: 25px 0 20px;
   background: url("/assets/img/dish-item-05.jpg") center/cover;
 }
@@ -352,7 +353,7 @@ header .title p {
 .section2 .menu .menu-left .item7 {
   height: 120px;
   width: 120px;
-  border-radius: 100px;
+  border-radius: 150px;
   margin: 25px 0 20px;
   background: url("/assets/img/dish-item-07.jpg") center/cover;
 }
@@ -387,7 +388,7 @@ header .title p {
 .section2 .menu .menu-right .item2 {
   height: 120px;
   width: 120px;
-  border-radius: 100px;
+  border-radius: 150px;
   margin: 25px 0 20px;
   background: url("/assets/img/dish-item-02.jpg") center/cover;
 }
@@ -395,7 +396,7 @@ header .title p {
 .section2 .menu .menu-right .item4 {
   height: 120px;
   width: 120px;
-  border-radius: 100px;
+  border-radius: 150px;
   margin: 25px 0 20px;
   background: url("/assets/img/dish-item-04.jpg") center/cover;
 }
@@ -403,7 +404,7 @@ header .title p {
 .section2 .menu .menu-right .item6 {
   height: 120px;
   width: 120px;
-  border-radius: 100px;
+  border-radius: 150px;
   margin: 25px 0 20px;
   background: url("/assets/img/dish-item-06.jpg") center/cover;
 }
@@ -411,7 +412,7 @@ header .title p {
 .section2 .menu .menu-right .item8 {
   height: 120px;
   width: 120px;
-  border-radius: 100px;
+  border-radius: 150px;
   margin: 25px 0 20px;
   background: url("/assets/img/dish-item-08.jpg") center/cover;
 }
@@ -475,7 +476,7 @@ header .title p {
   color: #a67245;
   font-family: "poppins";
   font-weight: 300;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 .section3 .content-left p {
@@ -517,7 +518,7 @@ header .title p {
           transform: translateY(-115px);
 }
 
-.section3 form {
+.section3 .form-grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
@@ -532,8 +533,8 @@ header .title p {
   background: none;
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.244);
-  padding: 30px 0px;
-  margin: 0 15px;
+  padding: 20px 0px;
+  margin: 0 15px 20px;
   -webkit-transform: translateY(-90px);
           transform: translateY(-90px);
 }
@@ -555,5 +556,101 @@ header .title p {
 .section3 .btn:hover {
   color: #1e1e1e;
   background: rgba(0, 0, 0, 0.2);
+}
+
+.section4 {
+  padding-top: 125px;
+  background: #21201e;
+  text-align: center;
+}
+
+.section4 .content-top span {
+  font-family: "allura";
+  font-size: 3rem;
+  color: #a67245;
+  line-height: 100px;
+}
+
+.section4 .content-top h2 {
+  color: white;
+  font-family: "poppins";
+  text-transform: uppercase;
+  font-size: 2.6rem;
+  -webkit-transform: translateY(-38px);
+          transform: translateY(-38px);
+}
+
+.section4 .content-top .img-ico2 {
+  height: 35px;
+  width: 35px;
+  background: url("../img/ic-plate.png") center/cover;
+  margin: 20px 0 40px;
+  margin: 0 auto 30px;
+}
+
+.section4 .content-bottom {
+  background: #eeeeee;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60% 40%;
+      grid-template-columns: 60% 40%;
+      grid-template-areas: "one three" "two three";
+  width: 65%;
+  min-height: 500px;
+  margin: 0 auto;
+}
+
+.section4 .content-bottom div:nth-child(1) {
+  background: #e30a0a;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: one;
+}
+
+.section4 .content-bottom div:nth-child(1) div:nth-child(1) {
+  background: url("/assets/img/event-01.jpg") center/cover;
+}
+
+.section4 .content-bottom div:nth-child(1) div:nth-child(2) dl dt {
+  text-transform: uppercase;
+}
+
+.section4 .content-bottom div:nth-child(1) div:nth-child(2) dl dd {
+  color: grey;
+}
+
+.section4 .content-bottom div:nth-child(1) div:nth-child(2) p {
+  text-transform: uppercase;
+}
+
+.section4 .content-bottom div:nth-child(2) {
+  background: #0d00fe;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: two;
+}
+
+.section4 .content-bottom div:nth-child(2) div:nth-child(1) {
+  background: url("/assets/img/event-02.jpg") center/cover;
+}
+
+.section4 .content-bottom div:nth-child(2) div:nth-child(2) dl dt {
+  text-transform: uppercase;
+}
+
+.section4 .content-bottom div:nth-child(2) div:nth-child(2) dl dd {
+  color: grey;
+}
+
+.section4 .content-bottom div:nth-child(2) div:nth-child(2) p {
+  text-transform: uppercase;
+}
+
+.section4 div:nth-child(3) {
+  background: url("/assets/img/event-03.jpg");
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: three;
 }
 /*# sourceMappingURL=index.css.map */

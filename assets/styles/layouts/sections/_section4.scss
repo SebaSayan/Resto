@@ -1,0 +1,77 @@
+.section4 {
+    padding-top: 125px;
+    background: $bgcolor2;
+    text-align: center;
+    .content-top {
+        span {
+            font-family: $font1;
+            font-size: 3rem;
+            color: $color3;
+            line-height: 100px;
+        }
+        h2 {
+            color: $color1;
+            font-family: $font2;
+            text-transform: uppercase;
+            font-size: 2.6rem;
+            transform: translateY(-38px);
+        }
+        .img-ico2 {
+            @include img-ico2;
+            margin: 0 auto 30px;
+        }
+    }
+    .content-bottom {
+        background: rgb(238, 238, 238);
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-areas: "one three" "two three";
+        width: 65%;
+        min-height: 500px;
+        margin: 0 auto;
+        div:nth-child(1) {
+            background: rgb(227, 10, 10);
+            grid-area: one;
+            div:nth-child(1) {
+                background: url("/assets/img/event-01.jpg") center/cover;
+            }
+            div:nth-child(2) {
+                dl {
+                    dt {
+                        text-transform: uppercase;
+                    }
+                    dd {
+                        color: grey
+                    }
+                }
+                p {
+                    text-transform: uppercase;
+                }
+            }
+        }
+        div:nth-child(2) {
+            background: rgb(13, 0, 254);
+            grid-area: two;
+            div:nth-child(1) {
+                background: url("/assets/img/event-02.jpg") center/cover;
+            }
+            div:nth-child(2) {
+                dl {
+                    dt {
+                        text-transform: uppercase;
+                    }
+                    dd {
+                        color: grey
+                    }
+                }
+                p {
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+    div:nth-child(3) {
+        background: url("/assets/img/event-03.jpg");
+        grid-area: three;
+    }
+}
