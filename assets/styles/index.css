@@ -589,68 +589,146 @@ header .title p {
 }
 
 .section4 .content-bottom {
-  background: #eeeeee;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 60% 40%;
       grid-template-columns: 60% 40%;
       grid-template-areas: "one three" "two three";
-  width: 65%;
+  width: 66%;
   min-height: 500px;
   margin: 0 auto;
 }
 
-.section4 .content-bottom div:nth-child(1) {
-  background: #e30a0a;
+.section4 .content-bottom .top-left {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: one;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px 10px;
+  background: #eeeeee;
 }
 
-.section4 .content-bottom div:nth-child(1) div:nth-child(1) {
+.section4 .content-bottom .top-left div:nth-child(1) {
   background: url("/assets/img/event-01.jpg") center/cover;
+  height: 100%;
+  width: 280px;
 }
 
-.section4 .content-bottom div:nth-child(1) div:nth-child(2) dl dt {
-  text-transform: uppercase;
+.section4 .content-bottom .top-left div:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  line-height: 50px;
+  margin: 0 auto;
 }
 
-.section4 .content-bottom div:nth-child(1) div:nth-child(2) dl dd {
+.section4 .content-bottom .top-left div:nth-child(2) dt {
+  text-align: left;
+  font-family: "roboto";
+  font-size: 1.9rem;
+}
+
+.section4 .content-bottom .top-left div:nth-child(2) dd {
   color: grey;
+  font-family: "roboto";
+  font-size: 1.2rem;
 }
 
-.section4 .content-bottom div:nth-child(1) div:nth-child(2) p {
+.section4 .content-bottom .top-left div:nth-child(2) p {
+  font-family: "roboto";
+  font-weight: bold;
   text-transform: uppercase;
 }
 
-.section4 .content-bottom div:nth-child(2) {
-  background: #0d00fe;
+.section4 .content-bottom .bottom-left {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: two;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px 10px;
+  background: #eeeeee;
 }
 
-.section4 .content-bottom div:nth-child(2) div:nth-child(1) {
+.section4 .content-bottom .bottom-left div:nth-child(1) {
   background: url("/assets/img/event-02.jpg") center/cover;
+  height: 100%;
+  width: 280px;
 }
 
-.section4 .content-bottom div:nth-child(2) div:nth-child(2) dl dt {
-  text-transform: uppercase;
+.section4 .content-bottom .bottom-left div:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  line-height: 50px;
+  margin: 0 auto;
 }
 
-.section4 .content-bottom div:nth-child(2) div:nth-child(2) dl dd {
+.section4 .content-bottom .bottom-left div:nth-child(2) dt {
+  text-align: left;
+  font-family: "roboto";
+  font-size: 1.9rem;
+}
+
+.section4 .content-bottom .bottom-left div:nth-child(2) dd {
+  font-family: "roboto";
   color: grey;
+  font-size: 1.2rem;
 }
 
-.section4 .content-bottom div:nth-child(2) div:nth-child(2) p {
+.section4 .content-bottom .bottom-left div:nth-child(2) p {
+  font-family: "roboto";
+  font-weight: bold;
   text-transform: uppercase;
 }
 
-.section4 div:nth-child(3) {
-  background: url("/assets/img/event-03.jpg");
+.section4 .content-bottom div:nth-child(3) {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   -ms-grid-column: 2;
   grid-area: three;
+  margin: 10px;
+  background: url(/assets/img/event-03.jpg) center/cover;
+}
+
+.section4 .content-bottom div:nth-child(3) div:nth-child(1) {
+  position: absolute;
+  background: #eeeeee;
+  height: 45%;
+  width: 22%;
+  -webkit-transform: translate(7%, 8%);
+          transform: translate(7%, 8%);
+}
+
+.section4 .content-bottom div:nth-child(3) div:nth-child(2) {
+  position: absolute;
+  background: black;
+  height: 13%;
+  width: 6%;
+  -webkit-transform: translate(160%, 28%);
+          transform: translate(160%, 28%);
 }
 /*# sourceMappingURL=index.css.map */

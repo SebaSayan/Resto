@@ -22,56 +22,99 @@
         }
     }
     .content-bottom {
-        background: rgb(238, 238, 238);
+        // background: rgb(238, 238, 238);
         display: grid;
         grid-template-columns: 60% 40%;
         grid-template-areas: "one three" "two three";
-        width: 65%;
+        width: 66%;
         min-height: 500px;
         margin: 0 auto;
-        div:nth-child(1) {
-            background: rgb(227, 10, 10);
+        .top-left {
             grid-area: one;
+            display: flex;
+            margin: 10px 10px;
+            background: rgb(238, 238, 238);
             div:nth-child(1) {
                 background: url("/assets/img/event-01.jpg") center/cover;
+                height: 100%;
+                width: 280px;
             }
             div:nth-child(2) {
-                dl {
-                    dt {
-                        text-transform: uppercase;
-                    }
-                    dd {
-                        color: grey
-                    }
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                line-height: 50px;
+                margin: 0 auto;
+                dt {
+                    text-align: left;
+                    font-family: $font3;
+                    font-size: 1.9rem;
+                }
+                dd {
+                    color: grey;
+                    font-family: $font3;
+                    font-size: 1.2rem;
                 }
                 p {
+                    font-family: $font3;
+                    font-weight: bold;
                     text-transform: uppercase;
                 }
             }
         }
-        div:nth-child(2) {
-            background: rgb(13, 0, 254);
+        .bottom-left {
             grid-area: two;
+            display: flex;
+            margin: 10px 10px;
+            background: rgb(238, 238, 238);
             div:nth-child(1) {
                 background: url("/assets/img/event-02.jpg") center/cover;
+                height: 100%;
+                width: 280px;
             }
             div:nth-child(2) {
-                dl {
-                    dt {
-                        text-transform: uppercase;
-                    }
-                    dd {
-                        color: grey
-                    }
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                line-height: 50px;
+                margin: 0 auto;
+                dt {
+                    text-align: left;
+                    font-family: $font3;
+                    font-size: 1.9rem;
+                }
+                dd {
+                    font-family: $font3;
+                    color: grey;
+                    font-size: 1.2rem;
                 }
                 p {
+                    font-family: $font3;
+                    font-weight: bold;
                     text-transform: uppercase;
                 }
             }
         }
-    }
-    div:nth-child(3) {
-        background: url("/assets/img/event-03.jpg");
-        grid-area: three;
+        div:nth-child(3) {
+            grid-area: three;
+            margin: 10px;
+            background: url(/assets/img/event-03.jpg) center/cover;
+            div:nth-child(1) {
+                position: absolute;
+                background: rgb(238, 238, 238);
+                height: 45%;
+                width: 22%;
+                transform: translate(7%, 8%);
+            }
+            div:nth-child(2) {
+                position: absolute;
+                background: rgb(0, 0, 0);
+                height: 13%;
+                width: 6%;
+                transform: translate(160%, 28%);
+            }
+        }
     }
 }
