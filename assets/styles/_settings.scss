@@ -45,6 +45,13 @@ $item8: url("/assets/img/dish-item-08.jpg") center/cover;
     align-items: center;
 }
 
+@mixin avatar {
+    height: 90px;
+    width: 90px;
+    border-radius: 100px;
+    margin: 25px 0 20px;
+}
+
 @mixin discover {
     font-size: 2.5rem;
     font-family: $font1;
@@ -63,4 +70,47 @@ $item8: url("/assets/img/dish-item-08.jpg") center/cover;
     width: 120px;
     border-radius: 150px;
     margin: 25px 0 20px;
+}
+
+@mixin date-event1-2 {
+    div:nth-child(1) {
+        background: rgb(33, 32, 30);
+        height: 110px;
+        width: 120px;
+        p {
+            line-height: 30px;
+            color: $color1;
+        }
+        p:nth-child(1) {
+            padding-top: 15px;
+            font-family: $font2;
+            font-size: 2.5rem;
+        }
+        p:nth-child(2) {
+            font-family: $font3;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@mixin date-event3 {
+    div:nth-child(1) {
+        background: rgb(33, 32, 30);
+        height: 110px;
+        width: 120px;
+        margin: 0 auto;
+        p {
+            line-height: 30px;
+            color: $color1;
+        }
+        p:nth-child(1) {
+            padding-top: 25px;
+            font-family: $font2;
+            font-size: 2.5rem;
+        }
+        p:nth-child(2) {
+            font-family: $font3;
+            font-size: 1.5rem;
+        }
+    }
 }

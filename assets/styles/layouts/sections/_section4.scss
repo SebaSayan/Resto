@@ -1,5 +1,5 @@
 .section4 {
-    padding-top: 125px;
+    padding: 125px 0 40px;
     background: $bgcolor2;
     text-align: center;
     .content-top {
@@ -38,12 +38,16 @@
                 background: url("/assets/img/event-01.jpg") center/cover;
                 height: 100%;
                 width: 280px;
+                @include center;
+                flex-direction: column;
+                @include date-event1-2;
             }
             div:nth-child(2) {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: start;
+                width: 57%;
                 line-height: 50px;
                 margin: 0 auto;
                 dt {
@@ -52,14 +56,16 @@
                     font-size: 1.9rem;
                 }
                 dd {
-                    color: grey;
+                    color: rgba(128, 128, 128, 0.5);
                     font-family: $font3;
                     font-size: 1.2rem;
+                    letter-spacing: 2px;
                 }
                 p {
                     font-family: $font3;
                     font-weight: bold;
                     text-transform: uppercase;
+                    letter-spacing: 2px;
                 }
             }
         }
@@ -72,6 +78,9 @@
                 background: url("/assets/img/event-02.jpg") center/cover;
                 height: 100%;
                 width: 280px;
+                @include center;
+                flex-direction: column;
+                @include date-event1-2;
             }
             div:nth-child(2) {
                 display: flex;
@@ -79,6 +88,7 @@
                 justify-content: center;
                 align-items: start;
                 line-height: 50px;
+                width: 57%;
                 margin: 0 auto;
                 dt {
                     text-align: left;
@@ -87,33 +97,53 @@
                 }
                 dd {
                     font-family: $font3;
-                    color: grey;
+                    color: rgba(128, 128, 128, 0.5);
                     font-size: 1.2rem;
+                    letter-spacing: 2px;
                 }
                 p {
                     font-family: $font3;
                     font-weight: bold;
                     text-transform: uppercase;
+                    letter-spacing: 2px;
                 }
             }
         }
-        div:nth-child(3) {
+        .content-right {
             grid-area: three;
             margin: 10px;
             background: url(/assets/img/event-03.jpg) center/cover;
-            div:nth-child(1) {
-                position: absolute;
-                background: rgb(238, 238, 238);
-                height: 45%;
-                width: 22%;
-                transform: translate(7%, 8%);
-            }
-            div:nth-child(2) {
-                position: absolute;
-                background: rgb(0, 0, 0);
-                height: 13%;
-                width: 6%;
-                transform: translate(160%, 28%);
+            @include center;
+            .container {
+                background: $bgcolor1;
+                height: 87%;
+                width: 87%;
+                @include date-event3;
+                div:nth-child(2) {
+                    height: 308px;
+                    @include center;
+                    flex-direction: column;
+                    dt {
+                        text-align: center;
+                        font-family: $font3;
+                        font-size: 1.9rem;
+                        transform: translateY(-70%);
+                    }
+                    dd {
+                        font-family: $font3;
+                        color: rgba(128, 128, 128, 0.5);
+                        font-size: 1.2rem;
+                        letter-spacing: 1px;
+                        transform: translateY(-120%);
+                    }
+                    p {
+                        font-family: $font3;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                        transform: translateY(250%);
+                    }
+                }
             }
         }
     }

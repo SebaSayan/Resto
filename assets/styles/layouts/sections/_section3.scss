@@ -8,7 +8,9 @@
         background: black;
         display: grid;
         grid-template-columns: 30% 70%;
+        min-width: 1333px;
         width: 70%;
+        // @media screen and (max-width: 1350px) {}    J'EN ETAIS LA, JE CONTINUE DEMAIN PROMI XD
     }
     .content-left {
         color: $color1;

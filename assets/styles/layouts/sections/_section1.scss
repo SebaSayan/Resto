@@ -2,7 +2,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     background: $bgcolor1;
-    ;
+    @media screen and(max-width: 800px) {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
     .content-left {
         display: flex;
         justify-content: center;
@@ -29,28 +32,29 @@
             text-align: center;
         }
         .avatar01 {
-            height: 90px;
-            width: 90px;
-            border-radius: 100px;
+            @include avatar;
             background: url("/assets/img/avatar-01.jpg") center/cover;
-            margin: 25px 0 20px;
         }
-    }
-    dl {
-        text-align: center;
-        dt {
-            font-size: 1.3rem;
-            font-family: $font2;
-        }
-        dd {
-            font-family: $font3;
-            color: $color2;
-            font-size: 0.9rem;
-            font-weight: bold;
-            text-transform: uppercase;
+        dl {
+            text-align: center;
+            dt {
+                font-size: 1.3rem;
+                font-family: $font2;
+            }
+            dd {
+                font-family: $font3;
+                color: $color2;
+                font-size: 0.9rem;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
         }
     }
     .content-right {
         background: url("/assets/img/store-01.jpg") center/cover;
+        @media screen and(max-width: 800px) {
+            position: absolute;
+            display: none;
+        }
     }
 }

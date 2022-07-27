@@ -116,5 +116,95 @@
                 background: $item8;
             }
         }
+        @media screen and(max-width: 990px) {
+            display: flex;
+            flex-direction: column;
+            min-width: 900px;
+            .menu-item {
+                .item1 {
+                    height: 80px;
+                    width: 80px;
+                    border-radius: 150px;
+                    margin: 25px 0 20px;
+                }
+                .item2 {
+                    height: 80px;
+                    width: 80px;
+                    border-radius: 150px;
+                    margin: 25px 0 20px;
+                }
+                .item3 {
+                    height: 80px;
+                    width: 80px;
+                    border-radius: 150px;
+                    margin: 25px 0 20px;
+                }
+                .item4 {
+                    height: 80px;
+                    width: 80px;
+                    border-radius: 150px;
+                    margin: 25px 0 20px;
+                }
+                .item5 {
+                    height: 80px;
+                    width: 80px;
+                    border-radius: 150px;
+                    margin: 25px 0 20px;
+                }
+                .item6 {
+                    height: 80px;
+                    width: 80px;
+                    border-radius: 150px;
+                    margin: 25px 0 20px;
+                }
+                .item7 {
+                    height: 80px;
+                    width: 80px;
+                    border-radius: 150px;
+                    margin: 25px 0 20px;
+                }
+                .item8 {
+                    height: 80px;
+                    width: 80px;
+                    border-radius: 150px;
+                    margin: 25px 0 20px;
+                }
+            }
+        }
+        @media screen and(max-width: 930px) {
+            display: flex;
+            flex-direction: column;
+            min-width: 800px;
+        }
+        @media screen and(max-width: 830px) {
+            display: flex;
+            flex-direction: column;
+            min-width: 700px;
+        }
+        @media screen and(max-width: 730px) {
+            display: flex;
+            flex-direction: column;
+            min-width: 600px;
+        }
+        @media screen and(max-width: 630px) {
+            display: flex;
+            flex-direction: column;
+            min-width: 500px;
+        }
+        @media screen and(max-width: 530px) {
+            display: flex;
+            flex-direction: column;
+            min-width: 400px;
+        }
+        @media screen and(max-width: 430px) {
+            display: flex;
+            flex-direction: column;
+            min-width: 300px;
+        }
+        @media screen and(max-width: 330px) {
+            display: flex;
+            flex-direction: column;
+            min-width: 300px;
+        }
     }
 }

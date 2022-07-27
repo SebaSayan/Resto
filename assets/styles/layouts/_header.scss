@@ -23,9 +23,17 @@ header {
         }
         .nav {
             width: 73%;
+            @media screen and(max-width: 800px) {
+                display: none;
+            }
         }
         .nav-social {
             width: 8%;
+        }
+        li {
+            @media screen and(max-width: 800px) {
+                margin-left: 30px;
+            }
         }
         li,
         a {

@@ -1,0 +1,42 @@
+.section5 {
+    background: $bgcolor2;
+    div {
+        position: relative;
+        z-index: 1;
+        transform: translateY(150px);
+        background: $bgcolor1;
+        width: 67%;
+        margin: 0 auto;
+        @include center;
+        flex-direction: column;
+        div {
+            @include avatar;
+            background: url(/assets/img/avatar-02.jpg) center/cover;
+            transform: translateY(-70px);
+        }
+        p {
+            width: 80%;
+            font-family: $font3;
+            font-size: 1.3rem;
+            line-height: 40px;
+            transform: translateY(-50px);
+            i {
+                font-size: 1rem;
+            }
+        }
+        dl {
+            text-align: center;
+            font-family: $font3;
+            line-height: 40px;
+            margin-bottom: 80px;
+            dt {
+                font-size: 1.8rem;
+                line-height: 60px;
+            }
+            dd {
+                color: $color3;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
