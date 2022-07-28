@@ -24,6 +24,11 @@
                 padding-bottom: 10px;
             }
         }
+        @media screen and (max-width: 1000px) {
+            ul {
+                width: 90%;
+            }
+        }
     }
     .bgmenu {
         position: absolute;
@@ -72,6 +77,7 @@
             .item1 {
                 @include items;
                 background: $item1;
+                margin-right: 35px;
             }
             .item3 {
                 @include items;
@@ -102,6 +108,7 @@
             .item2 {
                 @include items;
                 background: $item2;
+                margin-right: 30px;
             }
             .item4 {
                 @include items;
@@ -120,54 +127,64 @@
             display: flex;
             flex-direction: column;
             min-width: 900px;
+        }
+        @media screen and(max-width: 530px) {
+            display: flex;
+            flex-direction: column;
+            min-width: 500px;
             .menu-item {
                 .item1 {
-                    height: 80px;
-                    width: 80px;
+                    height: 40px;
+                    width: 40px;
                     border-radius: 150px;
                     margin: 25px 0 20px;
                 }
                 .item2 {
-                    height: 80px;
-                    width: 80px;
+                    height: 40px;
+                    width: 40px;
                     border-radius: 150px;
                     margin: 25px 0 20px;
                 }
                 .item3 {
-                    height: 80px;
-                    width: 80px;
+                    height: 40px;
+                    width: 40px;
                     border-radius: 150px;
                     margin: 25px 0 20px;
                 }
                 .item4 {
-                    height: 80px;
-                    width: 80px;
+                    height: 40px;
+                    width: 40px;
                     border-radius: 150px;
                     margin: 25px 0 20px;
                 }
                 .item5 {
-                    height: 80px;
-                    width: 80px;
+                    height: 40px;
+                    width: 40px;
                     border-radius: 150px;
                     margin: 25px 0 20px;
                 }
                 .item6 {
-                    height: 80px;
-                    width: 80px;
+                    height: 40px;
+                    width: 40px;
                     border-radius: 150px;
                     margin: 25px 0 20px;
                 }
                 .item7 {
-                    height: 80px;
-                    width: 80px;
+                    height: 40px;
+                    width: 40px;
                     border-radius: 150px;
                     margin: 25px 0 20px;
                 }
                 .item8 {
-                    height: 80px;
-                    width: 80px;
+                    height: 40px;
+                    width: 40px;
                     border-radius: 150px;
                     margin: 25px 0 20px;
+                }
+                dl,
+                dd {
+                    text-align: center;
+                    font-size: 1rem;
                 }
             }
         }

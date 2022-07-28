@@ -4,6 +4,9 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: end;
+    @media screen and (max-width: 780px) {
+        background: $bgcolor2;
+    }
     .content-left {
         display: flex;
         flex-direction: column;
@@ -21,6 +24,10 @@ footer {
             color: rgba(255, 255, 255, 0.7);
             font-size: 1.2rem;
             font-family: $font3;
+        }
+        @media screen and (max-width: 780px) {
+            display: none;
+            text-align: center;
         }
     }
     .content-right {
@@ -44,7 +51,6 @@ footer {
             font-size: 1rem;
             margin-bottom: 50px;
         }
-        div:nth-child(1) {}
         div:nth-child(2) {
             display: flex;
             ul {
@@ -53,9 +59,25 @@ footer {
                     i {
                         color: rgba(255, 255, 255, 0.7);
                         margin: 0 0 0 40px;
+                        @media screen and (max-width: 440px) {
+                            margin: 0 0 0 20px;
+                        }
+                        @media screen and (max-width: 420px) {
+                            margin: 0 0 0 10px;
+                        }
                     }
                 }
             }
+        }
+        @media screen and (max-width: 780px) {
+            width: 400px;
+            margin-left: 20px;
+        }
+        @media screen and (max-width: 440px) {
+            width: 300px;
+        }
+        @media screen and (max-width: 420px) {
+            width: 200px;
         }
     }
 }

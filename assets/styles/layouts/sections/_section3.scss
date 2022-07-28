@@ -8,9 +8,15 @@
         background: black;
         display: grid;
         grid-template-columns: 30% 70%;
-        min-width: 1333px;
         width: 70%;
-        // @media screen and (max-width: 1350px) {}    J'EN ETAIS LA, JE CONTINUE DEMAIN PROMI XD
+        @media screen and (max-width: 990px) {
+            margin-top: -200px;
+        }
+        @media screen and (max-width: 930px) {
+            margin-top: -200px;
+            display: grid;
+            grid-template-columns: 1fr;
+        }
     }
     .content-left {
         color: $color1;
@@ -68,11 +74,29 @@
             transform: translateY(-115px);
         }
     }
+    @media screen and (max-width: 1350px) {
+        .content {
+            min-width: 1000px;
+        }
+    }
+    @media screen and (max-width: 1020px) {
+        .content {
+            min-width: 900px;
+        }
+    }
+    @media screen and (max-width: 930px) {
+        .content {
+            min-width: 100%;
+        }
+    }
     .form-grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         width: 80%;
         margin: 0 auto;
+        @media screen and (max-width: 1350px) {
+            grid-template-columns: 1fr;
+        }
     }
     select,
     input {

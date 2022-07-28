@@ -36,7 +36,11 @@ $item8: url("/assets/img/dish-item-08.jpg") center/cover;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-    text-decoration-line: none
+    text-decoration-line: none;
+}
+
+body {
+    background: $bgcolor2;
 }
 
 @mixin center {
@@ -66,8 +70,8 @@ $item8: url("/assets/img/dish-item-08.jpg") center/cover;
 }
 
 @mixin items {
-    height: 120px;
-    width: 120px;
+    height: 110px;
+    width: 110px;
     border-radius: 150px;
     margin: 25px 0 20px;
 }
